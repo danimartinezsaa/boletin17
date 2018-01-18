@@ -15,7 +15,15 @@ public class Boletin17_1{
      * @param args the command line arguments
      */
     public static void main(String[] args){
-        // TODO code application logic here
+        MetodosArray m=new MetodosArray();
+        
+        float numeros[]=new float[6];
+        for(byte i=0;i<numeros.length;i++){
+            numeros[i]=(float)Math.random()*50+1;
+        }
+        
+        m.revertir(numeros);
+        m.mostrar(numeros);
     }
     
 }
